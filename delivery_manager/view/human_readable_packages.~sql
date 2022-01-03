@@ -1,0 +1,2 @@
+create or replace view human_readable_packages as
+select * from package;

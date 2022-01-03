@@ -34,14 +34,10 @@ PROMPT Installing tables
 -- Packages
 
 -- Functions
-PROMPT Installing functions
-
 @./function/sent_packages.fnc
 @./function/received_packages.fnc
 
 -- Views
-PROMPT Installing views
-
 @./view/package_traffic.sql
 @./view/human_readable_packages.sql
 

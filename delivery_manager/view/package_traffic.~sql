@@ -1,0 +1,5 @@
+CREATE OR REPLACE view package_traffic as
+SELECT p.first_name || ' ' || p.last_name AS NAME
+      ,sent_packages(p.person_id)
+      ,received_packages(p.person_id)
+  FROM person p;

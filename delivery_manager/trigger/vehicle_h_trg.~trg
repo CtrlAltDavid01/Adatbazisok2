@@ -28,7 +28,6 @@ BEGIN
       ,:old.purchase_date
       ,:old.mileage
       ,:old.load_capacity
-      ,:old.license_plate
       ,v_mod_user
       ,:old.created
       ,v_mod_time
@@ -53,7 +52,6 @@ BEGIN
       ,:new.purchase_date
       ,:new.mileage
       ,:new.load_capacity
-      ,:new.license_plate
       ,:new.mod_user
       ,:new.created
       ,:new.last_mod
