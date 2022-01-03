@@ -1,0 +1,2 @@
+ALTER TABLE delivery
+  ADD CONSTRAINT vehicle_fk FOREIGN KEY (vehicle_id) REFERENCES vehicle(vehicle_id);
