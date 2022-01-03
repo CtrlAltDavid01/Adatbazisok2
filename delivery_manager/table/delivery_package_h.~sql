@@ -1,0 +1,11 @@
+CREATE TABLE delivery_packages_h(
+  delivery_packages_id        NUMBER
+ ,delivery_id                 NUMBER
+ ,package_id                  NUMBER
+ ,mod_user                    varchar2(300)
+ ,created                     timestamp
+ ,last_mod                    timestamp
+ ,dml_flag                    varchar2(1)
+ ,VERSION                     number
+) 
+TABLESPACE users;
