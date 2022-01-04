@@ -1,12 +1,12 @@
-create or replace trigger delivery_trg
-  BEFORE INSERT OR UPDATE ON delivery
+create or replace trigger package_trg
+  BEFORE INSERT OR UPDATE ON package
   FOR EACH ROW
 begin
   IF inserting
   THEN
-    IF :new.delivery_id IS NULL
+    IF :new.package_id IS NULL
     THEN
-      :new.delivery_id := delivery_seq.nextval;
+      :new.package_id := package_seq.nextval;
     END IF;
   
     :new.created    := SYSDATE;
@@ -23,5 +23,5 @@ begin
 
   :new.last_mod := SYSDATE;
   :new.mod_user := sys_context('USERENV', 'OS_USER');
-end delivery_trg;
+end package_trg;
 /

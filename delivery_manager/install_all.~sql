@@ -34,10 +34,14 @@ PROMPT Installing tables
 -- Packages
 
 -- Functions
+PROMPT Installing functions
+
 @./function/sent_packages.fnc
 @./function/received_packages.fnc
 
 -- Views
+PROMPT Installing views
+
 @./view/package_traffic.sql
 @./view/human_readable_packages.sql
 
@@ -59,18 +63,18 @@ PROMPT Installing triggers
 @./trigger/delivery_package_trg.trg
 @./trigger/delivery_package_h_trg.trg
 
--- Recompile schema
-BEGIN
-  dbms_utility.compile_schema(schema => 'DELIVERY_MANAGER');
-END;
-/
-
 -- FK
 PROMPT Installing foreign keys
 
 @./fk/package_fk.sql
 @./fk/delivery_fk.sql
 @./fk/delivery_package_fk.sql
+
+-- Recompile schema
+BEGIN
+  dbms_utility.compile_schema(schema => 'DELIVERY_MANAGER');
+END;
+/
 
 -- Table data
 PROMPT Filling db width data
