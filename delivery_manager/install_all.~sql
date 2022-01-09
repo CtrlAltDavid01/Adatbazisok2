@@ -32,6 +32,7 @@ PROMPT Installing tables
 -- Install types
 
 -- Packages
+@./package/pkg_exception.spc
 
 -- Functions
 PROMPT Installing functions
@@ -44,6 +45,9 @@ PROMPT Installing views
 
 @./view/package_traffic.sql
 @./view/human_readable_packages.sql
+@./view/all_package_info.sql
+@./view/delivery_weight.sql
+@./view/waiting_for_delivery_package.sql
 
 -- Triggers
 PROMPT Installing triggers
@@ -59,22 +63,24 @@ PROMPT Installing triggers
 
 @./trigger/delivery_trg.trg
 @./trigger/delivery_h_trg.trg
+--@./trigger/delivery_driver_is_empl_trg.trg
 
 @./trigger/delivery_package_trg.trg
 @./trigger/delivery_package_h_trg.trg
-
--- FK
-PROMPT Installing foreign keys
-
-@./fk/package_fk.sql
-@./fk/delivery_fk.sql
-@./fk/delivery_package_fk.sql
 
 -- Recompile schema
 BEGIN
   dbms_utility.compile_schema(schema => 'DELIVERY_MANAGER');
 END;
 /
+
+-- FK
+PROMPT Installing foreign keys
+
+@./alter/person_alter.sql
+@./alter/package_alter.sql
+@./alter/delivery_alter.sql
+@./alter/delivery_package_alter.sql
 
 -- Table data
 PROMPT Filling db width data

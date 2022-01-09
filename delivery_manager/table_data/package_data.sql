@@ -99,7 +99,7 @@ VALUES(24, 4, 2, 2.57, to_date('17-12-2021', 'dd-mm-yyyy'));
 
 
 INSERT INTO package(package_id, sender_id, recipient_id, weight, send_date)
-VALUES(25, 2, 4, 0.11, to_date('18-12-2021', 'dd-mm-yyyy'));
+VALUES(25, 0, 4, 0.11, to_date('18-12-2021', 'dd-mm-yyyy'));
 
 
 INSERT INTO package(package_id, sender_id, recipient_id, weight, send_date)
@@ -115,7 +115,7 @@ VALUES(28, 2, 4, 2.22, to_date('19-12-2021', 'dd-mm-yyyy'));
 
 
 INSERT INTO package(package_id, sender_id, recipient_id, weight, send_date)
-VALUES(29, 2, 3, 8.32, to_date('20-12-2021', 'dd-mm-yyyy'));
+VALUES(29, 1, 3, 8.32, to_date('20-12-2021', 'dd-mm-yyyy'));
 
 
 INSERT INTO package(package_id, sender_id, recipient_id, weight, send_date)

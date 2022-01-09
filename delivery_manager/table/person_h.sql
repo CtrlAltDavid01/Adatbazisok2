@@ -8,6 +8,7 @@ CREATE TABLE person_h(
  ,loc_country_code  VARCHAR2(2)
  ,loc_city          VARCHAR2(100)
  ,loc_address       VARCHAR2(100)
+ ,is_employee       CHAR(1)
  ,mod_user          varchar2(300)
  ,created           timestamp
  ,last_mod          timestamp

@@ -53,7 +53,6 @@ BEGIN
       ,loc_country_code
       ,loc_city
       ,loc_address
-      ,is_employee
       ,mod_user
       ,created
       ,last_mod
@@ -69,7 +68,6 @@ BEGIN
       ,:new.loc_country_code
       ,:new.loc_city
       ,:new.loc_address
-      ,:new.is_employee
       ,:new.mod_user
       ,:new.created
       ,:new.last_mod

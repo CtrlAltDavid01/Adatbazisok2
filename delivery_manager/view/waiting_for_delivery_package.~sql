@@ -1,0 +1,2 @@
+CREATE OR REPLACE VIEW waiting_for_delivery_package AS
+select * from package pa where pa.package_id not in (select p.package_id from package p join delivery_package dp on p.package_id = dp.package_id);
