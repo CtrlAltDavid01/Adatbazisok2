@@ -1,7 +1,7 @@
-create or replace trigger delivery_trg
+CREATE OR REPLACE TRIGGER delivery_trg
   BEFORE INSERT OR UPDATE ON delivery
   FOR EACH ROW
-begin
+BEGIN
   IF inserting
   THEN
     IF :new.delivery_id IS NULL
@@ -9,9 +9,9 @@ begin
       :new.delivery_id := delivery_seq.nextval;
     END IF;
   
-    :new.created    := SYSDATE;
-    :new.dml_flag   := 'I';
-    :new.version    := 1;
+    :new.created  := SYSDATE;
+    :new.dml_flag := 'I';
+    :new.version  := 1;
   ELSE
     IF nvl(:new.dml_flag, 'U') <> 'D'
     THEN
@@ -23,5 +23,5 @@ begin
 
   :new.last_mod := SYSDATE;
   :new.mod_user := sys_context('USERENV', 'OS_USER');
-end delivery_trg;
+END delivery_trg;
 /

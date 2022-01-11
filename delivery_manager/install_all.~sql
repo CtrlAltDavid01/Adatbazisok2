@@ -48,6 +48,9 @@ PROMPT Installing views
 @./view/all_package_info.sql
 @./view/delivery_weight.sql
 @./view/waiting_for_delivery_package.sql
+@./view/employee_names.sql
+@./view/employee_sent_packages.sql
+@./view/employee_received_packages.sql
 
 -- Triggers
 PROMPT Installing triggers
@@ -63,7 +66,7 @@ PROMPT Installing triggers
 
 @./trigger/delivery_trg.trg
 @./trigger/delivery_h_trg.trg
---@./trigger/delivery_driver_is_empl_trg.trg
+@./trigger/delivery_driver_is_empl_trg.trg
 
 @./trigger/delivery_package_trg.trg
 @./trigger/delivery_package_h_trg.trg

@@ -48,6 +48,9 @@ PROMPT Installing views
 @./view/all_package_info.sql
 @./view/delivery_weight.sql
 @./view/waiting_for_delivery_package.sql
+@./view/employee_names.sql
+@./view/employee_sent_packages.sql
+@./view/employee_received_packages.sql
 
 -- Triggers
 PROMPT Installing triggers
