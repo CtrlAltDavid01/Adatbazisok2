@@ -11,7 +11,8 @@ BEGIN
   IF deleting
   THEN
     INSERT INTO delivery_package_h
-      (delivery_id
+      (delivery_package_id
+      ,delivery_id
       ,package_id
       ,mod_user
       ,created
@@ -19,7 +20,8 @@ BEGIN
       ,dml_flag
       ,version)
     VALUES
-      (:old.delivery_id
+      (:old.delivery_package_id
+      ,:old.delivery_id
       ,:old.package_id
       ,v_mod_user
       ,:old.created
@@ -28,7 +30,8 @@ BEGIN
       ,:old.version + 1);
   ELSE
     INSERT INTO delivery_package_h
-      (delivery_id
+      (delivery_package_id
+      ,delivery_id
       ,package_id
       ,mod_user
       ,created
@@ -36,7 +39,8 @@ BEGIN
       ,dml_flag
       ,version)
     VALUES
-      (:new.delivery_id
+      (:new.delivery_package_id
+      ,:new.delivery_id
       ,:new.package_id
       ,:new.mod_user
       ,:new.created

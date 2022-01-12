@@ -1,12 +1,12 @@
-CREATE OR REPLACE PROCEDURE insert_person(p_first_name       VARCHAR2(40)
-                                         ,p_last_name        VARCHAR2(40)
+CREATE OR REPLACE PROCEDURE insert_person(p_first_name       VARCHAR2
+                                         ,p_last_name        VARCHAR2
                                          ,p_birth_date       DATE
-                                         ,p_email            VARCHAR2(100)
-                                         ,p_tel              VARCHAR2(20)
-                                         ,p_loc_country_code VARCHAR2(2)
-                                         ,p_loc_city         VARCHAR2(100)
-                                         ,p_loc_address      VARCHAR2(100)
-                                         ,p_is_employee      CHAR(1)) IS
+                                         ,p_email            VARCHAR2
+                                         ,p_tel              VARCHAR2
+                                         ,p_loc_country_code VARCHAR2
+                                         ,p_loc_city         VARCHAR2
+                                         ,p_loc_address      VARCHAR2
+                                         ,p_is_employee      CHAR) IS
 BEGIN
   INSERT INTO person
     (first_name

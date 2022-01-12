@@ -9,6 +9,7 @@ PROMPT Installing sequences
 @./sequence/vehicle_seq.sql
 @./sequence/package_seq.sql
 @./sequence/delivery_seq.sql
+@./sequence/delivery_package_seq.sql
 
 -- Install tables
 PROMPT Installing tables
@@ -49,6 +50,8 @@ PROMPT Installing procedures
 @./procedure/insert_package.prc
 @./procedure/insert_delivery.prc
 @./procedure/insert_delivery_package.prc
+
+@./procedure/update_person.prc
 
 @./procedure/assign_packages_to_delivery.prc
 

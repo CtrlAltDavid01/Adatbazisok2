@@ -3,7 +3,12 @@ create or replace trigger delivery_package_trg
   FOR EACH ROW
 begin
   IF inserting
-  THEN  
+  THEN
+    IF :new.delivery_package_id IS NULL
+    THEN
+      :new.delivery_package_id := delivery_package_seq.nextval;
+    END IF;
+     
     :new.created    := SYSDATE;
     :new.dml_flag   := 'I';
     :new.version    := 1;

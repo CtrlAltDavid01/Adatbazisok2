@@ -1,8 +1,8 @@
-CREATE OR REPLACE PROCEDURE insert_vehicle(p_type          VARCHAR2(50)
+CREATE OR REPLACE PROCEDURE insert_vehicle(p_type          VARCHAR2
                                           ,p_purchase_date DATE
-                                          ,p_mileage       NUMBER(10, 1)
-                                          ,p_load_capacity NUMBER(10)
-                                          ,p_license_plate VARCHAR2(10)) IS
+                                          ,p_mileage       NUMBER
+                                          ,p_load_capacity NUMBER
+                                          ,p_license_plate VARCHAR2) IS
 BEGIN
   INSERT INTO vehicle
     (TYPE
