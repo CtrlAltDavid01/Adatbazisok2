@@ -1,6 +1,7 @@
 CREATE OR REPLACE FUNCTION packages_delivered_by_vehicle(p_vehicle_id NUMBER)
   RETURN NUMBER IS
   package_count NUMBER;
+BEGIN
   BEGIN
     SELECT COUNT(*)
       INTO package_count
