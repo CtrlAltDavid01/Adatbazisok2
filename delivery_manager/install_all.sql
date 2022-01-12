@@ -30,6 +30,22 @@ PROMPT Installing tables
 @./table/delivery_package_h.sql
 
 -- Install types
+PROMPT Installing types
+
+@./type/ty_person.typ
+@./type/ty_vehicle.typ
+@./type/ty_package.typ
+@./type/ty_delivery.typ
+@./type/ty_delivery_package.typ
+
+@./type/ty_person_list.typ
+@./type/ty_vehicle_list.typ
+@./type/ty_package_list.typ
+@./type/ty_delivery_list.typ
+@./type/ty_delivery_package_list.typ
+
+@./type/ty_person_name.typ
+@./type/ty_person_name_list.typ
 
 -- Packages
 PROMPT Installing exceptions
@@ -39,8 +55,24 @@ PROMPT Installing exceptions
 -- Functions
 PROMPT Installing functions
 
+@./function/select_person.fnc
+@./function/select_vehicle.fnc
+@./function/select_package.fnc
+@./function/select_delivery.fnc
+@./function/select_delivery_package.fnc
+
+@./function/select_people.fnc
+@./function/select_vehicles.fnc
+@./function/select_packages.fnc
+@./function/select_deliveries.fnc
+@./function/select_delivery_packages.fnc
+
+@./function/person_name.fnc
+@./function/person_names.fnc
+
 @./function/sent_packages.fnc
 @./function/received_packages.fnc
+@./function/packages_delivered_by_vehicle.fnc
 
 -- Procedures
 PROMPT Installing procedures

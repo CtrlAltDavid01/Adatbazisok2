@@ -1,7 +1,7 @@
 CREATE OR REPLACE PROCEDURE assign_packages_to_delivery(p_delivery_id NUMBER) IS
   v_delivery_date delivery.delivery_date%TYPE;
 
-  TYPE package_id_list IS TABLE OF package.package_id%TYPE INDEX BY PLS_INTEGER;
+  TYPE package_id_list IS TABLE OF package.package_id%TYPE;
   packages_to_assign package_id_list;
 BEGIN
   BEGIN
