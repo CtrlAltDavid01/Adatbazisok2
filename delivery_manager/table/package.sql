@@ -1,6 +1,6 @@
 CREATE TABLE package(
   package_id        NUMBER         NOT NULL PRIMARY KEY
- ,sender_id         NUMBER
+ ,sender_id         NUMBER         NOT NULL
  ,recipient_id      NUMBER         NOT NULL
  ,weight            NUMBER
  ,send_date         DATE

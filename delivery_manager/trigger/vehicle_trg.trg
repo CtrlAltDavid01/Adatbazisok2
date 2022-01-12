@@ -13,6 +13,11 @@ BEGIN
     :new.dml_flag   := 'I';
     :new.version    := 1;
   ELSE
+    if(:old.mileage > :new.mileage) then
+      raise_application_error(pkg_exception.gc_mileage_not_valid_exc_code,
+                              'New mileage can''t be less then old mileage!');
+    end if;
+  
     IF nvl(:new.dml_flag, 'U') <> 'D'
     THEN
       :new.dml_flag := 'U';

@@ -52,7 +52,12 @@ PROMPT Installing procedures
 @./procedure/insert_delivery_package.prc
 
 @./procedure/update_person.prc
+@./procedure/update_vehicle.prc
+@./procedure/update_package.prc
+@./procedure/update_delivery.prc
+@./procedure/update_delivery_package.prc
 
+@./procedure/update_is_employee.prc
 @./procedure/assign_packages_to_delivery.prc
 
 -- Views
@@ -96,6 +101,7 @@ END;
 PROMPT Installing foreign keys
 
 @./alter/person_alter.sql
+@./alter/vehicle_alter.sql
 @./alter/package_alter.sql
 @./alter/delivery_alter.sql
 @./alter/delivery_package_alter.sql
