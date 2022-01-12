@@ -57,6 +57,12 @@ PROMPT Installing procedures
 @./procedure/update_delivery.prc
 @./procedure/update_delivery_package.prc
 
+@./procedure/delete_person.prc
+@./procedure/delete_vehicle.prc
+@./procedure/delete_package.prc
+@./procedure/delete_delivery.prc
+@./procedure/delete_delivery_package.prc
+
 @./procedure/update_is_employee.prc
 @./procedure/assign_packages_to_delivery.prc
 
