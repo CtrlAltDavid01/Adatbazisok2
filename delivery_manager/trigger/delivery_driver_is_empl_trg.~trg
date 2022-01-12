@@ -8,7 +8,7 @@ begin
     
     if is_employee <> 'Y' then
       raise_application_error(pkg_exception.gc_person_not_empl_exc_code,
-                              'The person isn''t an employee');
+                              'The driver isn''t an employee');
     end if;
 end delivery_driver_is_empl_trg;
 /

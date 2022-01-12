@@ -9,7 +9,6 @@ PROMPT Installing sequences
 @./sequence/vehicle_seq.sql
 @./sequence/package_seq.sql
 @./sequence/delivery_seq.sql
-@./sequence/delivery_package_seq.sql
 
 -- Install tables
 PROMPT Installing tables
@@ -32,6 +31,8 @@ PROMPT Installing tables
 -- Install types
 
 -- Packages
+PROMPT Installing exceptions
+
 @./package/pkg_exception.spc
 
 -- Functions
@@ -39,6 +40,11 @@ PROMPT Installing functions
 
 @./function/sent_packages.fnc
 @./function/received_packages.fnc
+
+-- Procedures
+PROMPT Installing procedures
+
+@./procedure/
 
 -- Views
 PROMPT Installing views

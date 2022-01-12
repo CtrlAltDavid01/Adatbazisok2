@@ -1,6 +1,5 @@
 CREATE TABLE delivery_package_h(
-  delivery_package_id        NUMBER
- ,delivery_id                 NUMBER
+  delivery_id                 NUMBER
  ,package_id                  NUMBER
  ,mod_user                    varchar2(300)
  ,created                     timestamp
