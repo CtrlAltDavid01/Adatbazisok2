@@ -67,6 +67,7 @@ PROMPT Installing functions
 @./function/select_deliveries.fnc
 @./function/select_delivery_packages.fnc
 
+@./function/select_employees.fnc
 @./function/person_name.fnc
 @./function/person_names.fnc
 
