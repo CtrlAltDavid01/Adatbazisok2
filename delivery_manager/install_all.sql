@@ -44,6 +44,12 @@ PROMPT Installing functions
 -- Procedures
 PROMPT Installing procedures
 
+@./procedure/insert_person.prc
+@./procedure/insert_vehicle.prc
+@./procedure/insert_package.prc
+@./procedure/insert_delivery.prc
+@./procedure/insert_delivery_package.prc
+
 @./procedure/assign_packages_to_delivery.prc
 
 -- Views

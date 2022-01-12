@@ -1,1 +1,0 @@
-create sequence vacc_type_seq start with 100;

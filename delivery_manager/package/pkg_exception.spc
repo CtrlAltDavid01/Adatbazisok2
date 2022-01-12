@@ -11,6 +11,10 @@ CREATE OR REPLACE PACKAGE pkg_exception IS
   no_package_exc EXCEPTION;
   gc_no_package_exc_code CONSTANT NUMBER := -20200;
   PRAGMA EXCEPTION_INIT(no_package_exc, -20200);
+  
+  no_person_exc EXCEPTION;
+  gc_no_person_exc_code CONSTANT NUMBER := -20300;
+  PRAGMA EXCEPTION_INIT(no_person_exc, -20300);
 
 END pkg_exception;
 /

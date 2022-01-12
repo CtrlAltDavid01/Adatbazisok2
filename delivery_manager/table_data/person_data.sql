@@ -1,5 +1,5 @@
 INSERT INTO person(person_id, first_name, last_name, birth_date, email, tel, loc_country_code, loc_city, loc_address, is_employee)
-VALUES(0, 'Gábor', 'Kovács', to_date('13-10-2000', 'dd-mm-yyyy'), 'kovacs.gabor@gmail.com', '06302331210', 'HU', 'Pécs', 'Szív u. 15.', 'Y');
+VALUES(0, 'Gábor', 'Kovács', to_date('02-11-2000', 'dd-mm-yyyy'), 'kovacs.gabor@gmail.com', '06302331210', 'HU', 'Pécs', 'Szív u. 15.', 'Y');
 
 INSERT INTO person(person_id, first_name, last_name, birth_date, email, tel, loc_country_code, loc_city, loc_address, is_employee)
 VALUES(1, 'László', 'Tóth', to_date('23-10-1956', 'dd-mm-yyyy'), 'laszlo.toth@tot.hu', '0678123456', 'HU', 'Veszprém', 'Vasút u. 21.', 'Y');
